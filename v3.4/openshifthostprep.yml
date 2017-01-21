@@ -65,7 +65,7 @@
   - yum: name=atomic-openshift-utils state=latest
 
   - name: Install Docker
-    yum: name=docker-1.10.3 state=installed update_cache=yes
+    yum: name=docker state=installed update_cache=yes
     register: dockerInstalled
     notify:
     - Start Docker
