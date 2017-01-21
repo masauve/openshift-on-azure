@@ -30,7 +30,7 @@ We will use master as our jump host to install OpenShift using Ansible.
  subscription-manager register
  subscription-manager attach --pool <<your poolid>> 
  subscription-manager repos --disable="*"
- subscription-manager repos     --enable="rhel-7-server-rpms"     --enable="rhel-7-server-extras-rpms"     --enable="rhel-7-server-ose-3.3-rpms"
+ subscription-manager repos     --enable="rhel-7-server-rpms"     --enable="rhel-7-server-extras-rpms"     --enable="rhel-7-server-ose-3.4-rpms"
  yum install -y atomic-openshift-utils
 ```
 
